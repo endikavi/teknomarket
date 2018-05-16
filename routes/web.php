@@ -19,6 +19,12 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/gallery', 'GalleryController@index')->name('gallery');
+
+Route::get('/user', 'UserPanelController@index')->name('userPanel');
+
+Route::get('/element', 'elementController@index')->name('element');
+
 // Show payment form
 Route::get('/payment/add-funds/paypal', 'PaypalController@showForm');
 
