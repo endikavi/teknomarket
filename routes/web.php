@@ -11,25 +11,32 @@
 |
 */
 
+// mostar pagina principal
 Route::get('/', function () {
     return view('welcome');
 });
 
+// mostar pagina de contacto
+Route::get('/', function () {
+    return view('welcome');
+});
+
+//Rutas de logeo,registro,cambiar contraseña y email
+
 Auth::routes();
+
+// mostrar datos del usuario una vez registrado o logueado
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+// mostrar galeria de busqueda
+
 Route::get('/gallery', 'GalleryController@index')->name('gallery');
 
-Route::get('/user', 'UserPanelController@index')->name('userPanel');
+// mostrar pagina de un elemento en concreto
 
 Route::get('/element', 'elementController@index')->name('element');
 
-// Show payment form
-Route::get('/payment/add-funds/paypal', 'PaypalController@showForm');
+// Mostrar el carrito y boton de compra
 
-// Post payment details for store/process API request
-Route::post('/payment/add-funds/paypal', 'PaypalController@store');
-
-// Handle status
-Route::get('/payment/add-funds/paypal/status', 'PaypalController@getPaymentStatus');
+Route::get('/payment', 'PaypalController@showForm');

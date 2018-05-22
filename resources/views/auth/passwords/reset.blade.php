@@ -1,4 +1,6 @@
-@extends('layouts.app')
+@extends('layouts.main')
+
+@section('title', 'Teknomarket Reset')
 
 @section('content')
 <div class="container">
