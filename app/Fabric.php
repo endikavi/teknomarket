@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Fabric extends Model
 {
     // Nombre de la tabla en MySQL.
-	protected $table="fabricantes";
+	protected $table="fabrics";
 
 	// Atributos que se pueden asignar de manera masiva.
 	protected $fillable = array('nombre','email','telefono');

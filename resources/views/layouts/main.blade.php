@@ -19,9 +19,9 @@
         <title>@yield('title')</title>
         
         <!-- Custom styles -->
-        <link href="/css/main.css" rel="stylesheet">
+        <link href="/public/css/main.css" rel="stylesheet">
         <!-- Laravel boostraps styles -->
-        <link href="/css/app.css" rel="stylesheet">
+        <link href="/public/css/app.css" rel="stylesheet">
         
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -124,13 +124,13 @@
         </footer>
         
         <!-- Bootstrap core JavaScript -->
-        <script src="/js/jquery.min.js"></script>
-        <script src="/js/app.js"></script>
+        <script src="/public/js/jquery.min.js"></script>
+        <script src="/public/js/app.js"></script>
         <!-- Control de usuario,contenido y llamadas ajax -->
 
         <!--<script type="text/javascript" src="/js/logctrl.js"></script>-->
         <!--<script type="text/javascript" src="js/ajaxctrl.js"></script>-->
-        <script type="text/javascript" src="/js/paginador.js"></script>
-        <script type="text/javascript" src="/js/contentctrl.js"></script>
+        <script type="text/javascript" src="/public/js/paginador.js"></script>
+        <script type="text/javascript" src="/public/js/contentctrl.js"></script>
     </body>
 </html>

@@ -14,7 +14,7 @@ class Item extends Model
 	protected $primaryKey = 'serie';
 
 	// Atributos que se pueden asignar de manera masiva.
-	protected $fillable = array('modelo','precio','valoracion','fabricante','nombre','oferta','claves');
+	protected $fillable = array('modelo','precio','valoracion','fabricante','oferta','claves','img');
 	
 	// Aquí ponemos los campos que no queremos que se devuelvan en las consultas.
 	protected $hidden = ['created_at','updated_at',]; 
