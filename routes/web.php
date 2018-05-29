@@ -35,7 +35,7 @@ Route::get('/gallery', 'GalleryController@index')->name('gallery');
 
 // mostrar pagina de un elemento en concreto
 
-Route::get('/element', 'elementController@index')->name('element');
+Route::get('/element', 'ElementController@index')->name('element');
 
 // Mostrar el carrito y boton de compra
 

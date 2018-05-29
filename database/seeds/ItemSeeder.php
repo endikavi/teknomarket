@@ -33,7 +33,8 @@ class ItemSeeder extends Seeder
 				 'oferta'=>$faker->randomNumber(2),	// de 3 dígitos como máximo.
 				 'valoracion'=>$faker->randomNumber(1),	// de 4 dígitos como máximo.
 				 'claves'=>$faker->word(),
-				 'fabric_id'=>$faker->numberBetween(1,$cuantos)
+				 'fabric_id'=>$faker->numberBetween(1,$cuantos),
+                 'img'=>$faker->imageUrl(800,450)
 				]
 			);
 		}

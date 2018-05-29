@@ -129,7 +129,7 @@
         <!-- Control de usuario,contenido y llamadas ajax -->
 
         <!--<script type="text/javascript" src="/js/logctrl.js"></script>-->
-        <!--<script type="text/javascript" src="js/ajaxctrl.js"></script>-->
+        <script type="text/javascript" src="js/ajaxctrl.js"></script>
         <script type="text/javascript" src="/public/js/paginador.js"></script>
         <script type="text/javascript" src="/public/js/contentctrl.js"></script>
     </body>

@@ -1,4 +1,4 @@
-var inmuebles;
+var elementos;
 var noticias;
 var usuarios;
 
@@ -13,7 +13,7 @@ function llamada(data, type, url, dataType, inf) {
 				
         	obj = JSON.parse(JSON.stringify(data));
 			console.log(obj);
-			if (inf == "inm"){inmuebles = obj}
+			if (inf == "inm"){elementos = obj}
 			if (inf == "not"){noticias = obj}
 			if (inf == "use"){usuarios = obj}
 
@@ -33,21 +33,21 @@ function llamada(data, type, url, dataType, inf) {
         })
         .always(function (jqXHR, data) {
 		
-			if ($('#reciente').length == 1 && $('#popular').length == 1 && inmuebles !== undefined && noticias !== undefined){
+			/*if ($('#reciente').length == 1 && $('#popular').length == 1 && inmuebles !== undefined && noticias !== undefined){
 	
 				console.log('contenidos cargados');
 				fillHomeContent();
 		
-			}
+			}*/
 		
         });
 };
 
-llamada('', "GET", "/inmobiliaria/lib/propertydata.php", "JSON", "inm");
-llamada('', "GET", "/inmobiliaria/lib/noticedata.php", "JSON", "not");
-if(UserData[1] == 1){
+llamada('', "GET", "/public/element", "JSON", "inm");
+//llamada('', "GET", "/inmobiliaria/lib/noticedata.php", "JSON", "not");
+/*if(UserData[1] == 1){
 	llamada('', "GET", "/inmobiliaria/lib/userdata.php", "JSON", "use");
-}
+}*/
 
 function PropertyRemove(id){
 	
