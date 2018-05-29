@@ -43,7 +43,7 @@ function llamada(data, type, url, dataType, inf) {
         });
 };
 
-llamada('', "GET", "/public/element", "JSON", "inm");
+llamada('', "GET", "element", "JSON", "inm");
 //llamada('', "GET", "/inmobiliaria/lib/noticedata.php", "JSON", "not");
 /*if(UserData[1] == 1){
 	llamada('', "GET", "/inmobiliaria/lib/userdata.php", "JSON", "use");

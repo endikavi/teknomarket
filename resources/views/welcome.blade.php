@@ -41,25 +41,25 @@
 
         <div class="col-md-3 col-sm-6 mb-4">
           <a href="#">
-            <img class="img-fluid peque-img" src="/inmobiliaria/public/images/home-02.jpg" alt="">
+            <img class="img-fluid peque-img" src="" alt="">
           </a>
         </div>
 
         <div class="col-md-3 col-sm-6 mb-4">
           <a href="#">
-            <img class="img-fluid peque-img" src="/inmobiliaria/public/images/noticia-01.jpg" alt="">
+            <img class="img-fluid peque-img" src="" alt="">
           </a>
         </div>
 
         <div class="col-md-3 col-sm-6 mb-4">
           <a href="#">
-            <img class="img-fluid peque-img" src="/inmobiliaria/public/images/naveindustrial-03.jpg" alt="">
+            <img class="img-fluid peque-img" src="" alt="">
           </a>
         </div>
 
         <div class="col-md-3 col-sm-6 mb-4">
           <a href="#">
-            <img class="img-fluid peque-img" src="/inmobiliaria/public/images/noticia-02.jpg" alt="">
+            <img class="img-fluid peque-img" src="" alt="">
           </a>
         </div>
 
@@ -73,25 +73,25 @@
 
         <div class="col-md-3 col-sm-6 mb-4">
           <a href="#">
-            <img class="img-fluid peque-img" src="/inmobiliaria/public/images/noticia-03.jpg" alt="">
+            <img class="img-fluid peque-img" src="" alt="">
           </a>
         </div>
 
         <div class="col-md-3 col-sm-6 mb-4">
           <a href="#">
-            <img class="img-fluid peque-img" src="/inmobiliaria/public/images/naveindustrial-02.jpg" alt="">
+            <img class="img-fluid peque-img" src="" alt="">
           </a>
         </div>
 
         <div class="col-md-3 col-sm-6 mb-4">
           <a href="#">
-            <img class="img-fluid peque-img" src="/inmobiliaria/public/images/home-06.jpg" alt="">
+            <img class="img-fluid peque-img" src="" alt="">
           </a>
         </div>
 
         <div class="col-md-3 col-sm-6 mb-4">
           <a href="#">
-            <img class="img-fluid peque-img" src="/inmobiliaria/public/images/home-04.jpg" alt="">
+            <img class="img-fluid peque-img" src="" alt="">
           </a>
         </div>
 

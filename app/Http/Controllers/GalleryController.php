@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Item;
 class GalleryController extends Controller
 {
     /**
@@ -13,7 +13,7 @@ class GalleryController extends Controller
      */
     public function index()
     {
-        //
+        return view('gallery')->with(['data'=>Item::all()]);
     }
 
     /**
