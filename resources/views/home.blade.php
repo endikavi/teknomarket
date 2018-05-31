@@ -15,9 +15,15 @@
                     @endif
 
                     Bienvenido {{ Auth::user()->name }}
+                    <div id="paypal-button"></div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+@endsection
+
+@section('js')
+<script src="https://www.paypalobjects.com/api/checkout.js"></script>
+<script type="text/javascript" src="js/paypal.js"></script>
 @endsection

@@ -132,5 +132,6 @@
         <script type="text/javascript" src="js/ajaxctrl.js"></script>
         <script type="text/javascript" src="js/paginador.js"></script>
         <script type="text/javascript" src="js/contentctrl.js"></script>
+        @yield('js')
     </body>
 </html>
