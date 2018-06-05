@@ -32,31 +32,11 @@
                 payment: {
                     transactions: [
                         {
-                            amount: { total: '900.00', currency: 'EUR' },
+                            amount: amount,
                         
                             description: "Pago en teknomarket,componentes de oredenador.",
                             custom: "Teknomarket",
-                            "item_list": {
-                                "items": [
-                                {
-                                  "name": "procesador",
-                                  "description": "I3-4500K",
-                                  "quantity": "2",
-                                  "price": "300",
-                                  "tax": "0.00",
-                                  "sku": "1",
-                                  "currency": "EUR"
-                                  },
-                                  {
-                                  "name": "grafica nvidia",
-                                  "description": "gtx 3456",
-                                  "quantity": "1",
-                                  "price": "300",
-                                  "tax": "0.00",
-                                  "sku": "product34",
-                                  "currency": "EUR"
-                                  }
-                                ],
+                            "item_list": { "items": items ,
                                 "shipping_address": {
                                   "recipient_name": "Brian Robinson",
                                   "line1": "4th Floor",
