@@ -1,0 +1,7 @@
+Url =  http://tecnomarket.x10host.com/public/
+
+Cuenta falsa paypal comprador
+
+nombre =  endika.vi-buyer@gmail.com
+
+clave =  endikabuyer

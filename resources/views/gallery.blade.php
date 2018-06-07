@@ -5,6 +5,7 @@
 @section('content')
 
 <div id="galleryContent">
+
 @foreach ($data as $element)
 
 @if ($element->serie%2!=0)
@@ -22,6 +23,7 @@
             <h3>{{ $element->modelo }} <small> {{ $element->precio }}&#8364;</small></h3>
             <h4>Descuento {{ $element->oferta }}%</h4>
             <br>
+            @auth
             <button class="btn btn-primary"  onclick='
                 items.push  ({
                                   "name": "{{ $element->modelo }}",
@@ -36,7 +38,8 @@
                amount.total+={{ $element->precio }}
                 sessionStorage.setItem("items",JSON.stringify(items))
                 sessionStorage.setItem("amount",JSON.stringify(amount))                                     
-            '> <h4>Añadir al carro</h4> </button> 
+            '> <h4>Añadir al carro</h4> </button>
+            @endauth
         </div>
     
 

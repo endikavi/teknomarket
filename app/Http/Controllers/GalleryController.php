@@ -45,7 +45,10 @@ class GalleryController extends Controller
      */
     public function show($id)
     {
-        //
+        $resultado=Item::where('claves',"=",$id)->get();
+        if($resultado){
+            return view('gallery')->with(['data'=>$resultado]);
+        }else{return view('gallery')->with(['data'=>Item::all()]);}
     }
 
     /**

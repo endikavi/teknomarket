@@ -29,9 +29,15 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-// mostrar galeria de busqueda
+// mostrar galeria
 
 Route::get('/gallery', 'GalleryController@index')->name('gallery');
+
+// mostrar galeria de unos elementos
+
+Route::get('/gallery/{id?}', 'GalleryController@show')->name('gallery');
+
+//Route::resource('gallery','GalleryController',[ 'only'=>['show'] ]);
 
 // mostrar pagina de un elemento en concreto
 

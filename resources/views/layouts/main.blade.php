@@ -19,9 +19,9 @@
         <title>@yield('title')</title>
         
         <!-- Custom styles -->
-        <link href="css/main.css" rel="stylesheet">
+        <link href="/public/css/main.css" rel="stylesheet">
         <!-- Laravel boostraps styles -->
-        <link href="css/app.css" rel="stylesheet">
+        <link href="/public/css/app.css" rel="stylesheet">
         
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -48,17 +48,17 @@
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Busqueda</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     
-			        <a class="dropdown-item" href="" >Busqueda avanzada</a>
-                    <a class="dropdown-item" href="" >Procesadores</a>
-                    <a class="dropdown-item" href="" >Tarjetas graficas</a>
-                    <a class="dropdown-item" href="" >Memoria ram</a>
-                    <a class="dropdown-item" href="" >Discos duros</a>
-                    <a class="dropdown-item" href="" >Lectores</a>
-                    <a class="dropdown-item" href="" >Fuentes de alimentación</a>
-                    <a class="dropdown-item" href="" >Placas base</a>
-                    <a class="dropdown-item" href="" >Refrigeración</a>
-                    <a class="dropdown-item" href="" >Perifericos</a>
-                    <a class="dropdown-item" href="" >Cajas</a>
+			        <a class="dropdown-item" href="/public/gallery" >Busqueda avanzada</a>
+                    <a class="dropdown-item" href="/public/gallery/procesador" >Procesadores</a>
+                    <a class="dropdown-item" href="/public/gallery/grafica" >Tarjetas graficas</a>
+                    <a class="dropdown-item" href="/public/gallery/ram" >Memoria ram</a>
+                    <a class="dropdown-item" href="/public/gallery/discoduro" >Discos duros</a>
+                    <a class="dropdown-item" href="/public/gallery/lector" >Lectores</a>
+                    <a class="dropdown-item" href="/public/gallery/alimentacion" >Fuentes de alimentación</a>
+                    <a class="dropdown-item" href="/public/gallery/placabase" >Placas base</a>
+                    <a class="dropdown-item" href="/public/gallery/refrigeracion" >Refrigeración</a>
+                    <a class="dropdown-item" href="/public/gallery/perifericos" >Perifericos</a>
+                    <a class="dropdown-item" href="/public/gallery/cajas" >Cajas</a>
                     
                 </div>  
                 
@@ -78,11 +78,10 @@
 			
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 			
-            <a class="dropdown-item" href="">Mi carro</a>
                 @if (Route::has('login'))
                 
                 @auth
-                    <a class="dropdown-item" href="{{ url('/home') }}">Mis datos</a>
+                    <a class="dropdown-item" href="{{ url('/home') }}">Mi carro</a>
                     <a class="dropdown-item" href="{{ route('logout') }}"
                         onclick="event.preventDefault();
                         document.getElementById('logout-form').submit();">Salir
@@ -124,14 +123,10 @@
         </footer>
         
         <!-- Bootstrap core JavaScript -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/app.js"></script>
+        <script src="/public/js/jquery.min.js"></script>
+        <script src="/public/js/app.js"></script>
         <!-- Control de usuario,contenido y llamadas ajax -->
-
-        <!--<script type="text/javascript" src="/js/logctrl.js"></script>-->
-        <script type="text/javascript" src="js/ajaxctrl.js"></script>
-        <script type="text/javascript" src="js/paginador.js"></script>
-        <script type="text/javascript" src="js/contentctrl.js"></script>
+        <script type="text/javascript" src="/public/js/paginador.js"></script>
         @yield('js')
     </body>
 </html>
